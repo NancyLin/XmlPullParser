@@ -23,6 +23,7 @@ public class WeatherService {
             //初始化pull xml解析
             parser.setInput(is, "utf-8");
             int type = parser.getEventType();//获取eventType
+            //循环读取节点cd
             while( type != XmlPullParser.END_DOCUMENT){
                 switch( type ){
                     case XmlPullParser.START_TAG:
